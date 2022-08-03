@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <form method="post">
+    <div class="container">
+        <div class="row mt-5">
+            <img src="banner.png" alt="">
+            <h2 class="h1 mt-5">Bake & Batter Order Form</h2>
+            <div class="col-sm-4 mt-5">
+                <p>Choose a cake</p>
+                <input class="form-check-input position-static" type="radio" name="option1" id="chocolate1" value="option1">
+                <label for="chocolate1">Chocolate</label><br>
+                <input class="form-check-input position-static" type="radio" name="option1" id="yellow" value="option1">
+                <label for="yellow">Yellow</label><br>
+                <input class="form-check-input position-static" type="radio" name="option1" id="white" value="option1">
+                <label for="white">White</label><br>
+                <input class="form-check-input position-static" type="radio" name="option1" id="carrot" value="option1">
+                <label for="carrot">Carrot</label><br>
+                <input class="form-check-input position-static" type="radio" name="option1" id="other1" value="option1">
+                <label for="other1">Other</label>             
+            </div>
+            <div class="col-sm-4 mt-5">
+                <p>Choose the filling</p>
+                <input class="form-check-input position-static" type="radio" name="option2" id="chocolate2" value="option2">
+                <label for="chocolate2">Chocolate</label><br>
+                <input class="form-check-input position-static" type="radio" name="option2" id="vanilla" value="option2">
+                <label for="vanilla">Vanilla</label><br>
+                <input class="form-check-input position-static" type="radio" name="option2" id="creamCheese" value="option2">
+                <label for="creamCheese">Cream Cheese</label><br>
+                <input class="form-check-input position-static" type="radio" name="option2" id="butterCream" value="option2">
+                <label for="butterCream">Buttercream</label><br>
+                <input class="form-check-input position-static" type="radio" name="option2" id="other2" value="option2">
+                <label for="other2">Other</label>
+            </div>
+            <div class="col-sm-4 mt-5">
+                <p>Shape</p>
+                <input class="form-check-input position-static" type="radio" name="option3" id="square" value="option3">
+                <label for="square">Square</label><br>
+                <input class="form-check-input position-static" type="radio" name="option3" id="circle" value="option3">
+                <label for="circle">Circle</label><br>
+                <input class="form-check-input position-static" type="radio" name="option3" id="rectangle" value="option3">
+                <label for="rectangle">Rectangle</label><br>
+                <input class="form-check-input position-static" type="radio" name="option3" id="special" value="option3">
+                <label for="special">Special</label><br>
+                <input class="form-check-input position-static" type="radio" name="option3" id="other3" value="option3">
+                <label for="other3">Others</label>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-sm-4">
+                <p>Choose the icing</p>
+                <input class="form-check-input position-static" type="radio" name="option4" id="chocolate3" value="option4">
+                <label for="chocolate3">Chocolate</label><br>
+                <input class="form-check-input position-static" type="radio" name="option4" id="yellow2" value="option4">
+                <label for="yellow2">Yellow</label><br>
+                <input class="form-check-input position-static" type="radio" name="option4" id="white2" value="option4">
+                <label for="white2">White</label><br>
+                <input class="form-check-input position-static" type="radio" name="option4" id="carrot2" value="option4">
+                <label for="carrot2">Carrot</label><br>
+                <input class="form-check-input position-static" type="radio" name="option4" id="other4" value="option4">
+                <label for="other4">Other</label>             
+            </div>
+            <div class="col-sm-4">
+                <p>Choose flavors</p>
+                <input class="form-check-input position-static" type="radio" name="option5" id="chocolate4" value="option5">
+                <label for="chocolate4">Chocolate</label><br>
+                <input class="form-check-input position-static" type="radio" name="option5" id="vanilla2" value="option5">
+                <label for="vanilla2">Vanilla</label><br>
+                <input class="form-check-input position-static" type="radio" name="option5" id="creamCheese2" value="option5">
+                <label for="creamCheese2">Cream Cheese</label><br>
+                <input class="form-check-input position-static" type="radio" name="option5" id="butterCream2" value="option5">
+                <label for="butterCream2">Buttercream</label><br>
+                <input class="form-check-input position-static" type="radio" name="option5" id="other5" value="option5">
+                <label for="other5">Other</label>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-4">
+                <p class="pink">Size</p>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="">Small</option>
+                    <option value="">Medium</option>
+                    <option value="">Large</option>
+                    <option value="">2 Tier</option>
+                </select>      
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-4">
+                <p>Do you have any allergies?</p>
+                <textarea class="text-area"></textarea>      
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-4    ">
+                <p>Photo or sketch of the cake</p>
+                <input type="file" class="form-control-file">     
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-4">
+                <p>Special requests</p>
+                <textarea class="text-area"></textarea>      
+            </div>
+        </div>
+            <div class="form-row mt-5">
+              <div class="form-group col-md-6">
+                <label for="name">Name</label>
+                <input type="name" class="form-control" id="name" placeholder="Enter your name">
+              </div>
+                <div class="form-group col-md-6 mt-3">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+              <div class="form-group col-md-6 mt-3">
+                <label for="contactNumber">Contact Number</label>
+                <input type="number" class="form-control" id="contactNumber" placeholder="Enter your contact number">
+              </div>
+            </div>
+            <div class="form-group col-md-6 mt-3">
+              <label for="address">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6 mt-3">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" placeholder="Caloocan City">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-4" id="btn">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
